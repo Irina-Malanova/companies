@@ -1,10 +1,10 @@
 server:
-  port: 8189
+  port: 8080
 
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test_app
+    url: jdbc:mysql://host.docker.internal:3306/test_app
     username: admin
     password: password
   jpa:
@@ -28,4 +28,4 @@ zk:
   homepage: search
   zul-view-resolver-prefix: /zul
   richlet-filter-mapping: /richlet/*
-  resource-uri: /zkres
+

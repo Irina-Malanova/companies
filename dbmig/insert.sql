@@ -1,3 +1,8 @@
+DELETE from addresses;
+DELETE from  filials;
+DELETE from  types;
+DELETE from companies;
+
 ALTER TABLE addresses AUTO_INCREMENT = 1;
 ALTER TABLE filials AUTO_INCREMENT = 1;
 ALTER TABLE types AUTO_INCREMENT = 1;
