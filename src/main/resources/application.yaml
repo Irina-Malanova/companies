@@ -1,0 +1,31 @@
+server:
+  port: 8189
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_app
+    username: admin
+    password: password
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+        naming:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+  #flyway:
+  #  baseline-on-migrate: true
+  #  url: ${spring.datasource.url}
+  #  user: ${spring.datasource.username}
+  #  password: ${spring.datasource.password}
+  #  locations: classpath:db/migration
+zk:
+  homepage: search
+  zul-view-resolver-prefix: /zul
+  richlet-filter-mapping: /richlet/*
+  resource-uri: /zkres

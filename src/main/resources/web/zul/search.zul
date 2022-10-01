@@ -1,0 +1,39 @@
+<?page title="ZK"?>
+<window xmlns:w="http://www.zkoss.org/2005/zk/client"  border="normal"  id="wCompany" use="controllers.exampe.companies.CompanyInfo" style="margin:auto">
+     <caption  sclass="fn-caption"
+             label="Список компаний" style="font-weight: bold;"/>
+
+    <textbox id="keywordBox" />
+	<button id="search" label="search" iconSclass="z-icon-search" style="margin: 0 0 5px 5px" onClick="wCompany.search()" />
+	<listbox id="lbCompany" model="${companyListBox}" emptyMessage="data not found" sizedByContent="true" span="true" onSelect="wCompany.select()">
+		<listhead>
+			<listheader label="Название" sort="auto"/>
+			<listheader label="Тип" sort="auto"/>
+			<listheader label="Aдрес" />
+			<listheader label="Филиалы" />
+			</listhead>
+			 <template name="model">
+           <listitem>
+			<listcell label="${each.name}"/>
+			<listcell label="${each.type.name}"/>
+			<listcell label="${each.address.toString()}"/>
+			<listcell label="${each.filials.size()}"/>
+		</listitem>
+		</template>
+	</listbox>
+
+    <label value="Филиалы"/>
+
+	<listbox id="lbFilials" model="${filialsListBox}" emptyMessage="data not found" sizedByContent="true" span="true">
+            <listhead>
+            	<listheader label="Название" sort="auto"/>
+            	<listheader label="Aдрес" />
+            	</listhead>
+            	<template name="model">
+                    <listitem>
+            	        <listcell label="${each.name}"/>
+            	        <listcell label="${each.address.toString()}"/>
+            	    </listitem>
+            	</template>
+            </listbox>
+</window>
