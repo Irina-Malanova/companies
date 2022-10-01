@@ -1,4 +1,4 @@
-package exampe.companies.model;
+package example.companies.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

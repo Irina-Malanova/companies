@@ -1,5 +1,5 @@
 <?page title="ZK"?>
-<window xmlns:w="http://www.zkoss.org/2005/zk/client"  border="normal"  id="wCompany" use="controllers.exampe.companies.CompanyInfo" style="margin:auto">
+<window xmlns:w="http://www.zkoss.org/2005/zk/client"  border="normal"  id="wCompany" use="example.companies.CompanyInfo" style="margin:auto">
      <caption  sclass="fn-caption"
              label="Список компаний" style="font-weight: bold;"/>
 

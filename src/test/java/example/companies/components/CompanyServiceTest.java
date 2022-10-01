@@ -1,7 +1,7 @@
-package exampe.companies.components;
+package example.companies.components;
 
-import exampe.companies.model.Company;
-import exampe.companies.services.CompanyService;
+import example.companies.model.Company;
+import example.companies.services.CompanyService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

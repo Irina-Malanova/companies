@@ -1,8 +1,8 @@
-package exampe.companies.repositories;
+package example.companies.repositories;
 
+import example.companies.model.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import exampe.companies.model.Company;
 
 import java.util.Optional;
 

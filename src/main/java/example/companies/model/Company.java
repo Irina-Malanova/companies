@@ -1,37 +1,43 @@
-package exampe.companies.model;
+package example.companies.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name = "filials")
+@Table(name = "companies")
 @Data
 @NoArgsConstructor
-public class Filial {
+public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "company_id")
-    private Company company;
-
     @Column(name = "name")
     private String name;
+
+    @OneToOne
+    @JoinColumn(name = "type_id")
+    private Type type;
 
     @OneToOne
     @JoinColumn(name = "address_id")
     private Address address;
 
+    @OneToMany(mappedBy = "company", fetch = FetchType.EAGER)
+    private List<Filial> filials;
+
     @Override
     public String toString() {
-        return "Filial{" +
+        return "Company{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", type=" + type +
                 ", address=" + address +
+                ", filials=" + filials +
                 '}';
     }
 }

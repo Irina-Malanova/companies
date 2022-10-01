@@ -1,4 +1,4 @@
-package exampe.companies.exceptions;
+package example.companies.exceptions;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

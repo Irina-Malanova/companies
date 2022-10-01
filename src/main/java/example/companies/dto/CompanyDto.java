@@ -1,12 +1,12 @@
-package exampe.companies.dto;
+package example.companies.dto;
 
-import exampe.companies.model.Address;
-import exampe.companies.model.Filial;
-import exampe.companies.model.Type;
+import example.companies.model.Address;
+import example.companies.model.Filial;
+import example.companies.model.Type;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
-import exampe.companies.model.Company;
+import example.companies.model.Company;
 
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;

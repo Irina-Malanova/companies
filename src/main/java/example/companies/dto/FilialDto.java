@@ -1,8 +1,8 @@
-package exampe.companies.dto;
+package example.companies.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import exampe.companies.model.Address;
+import example.companies.model.Address;
 
 @Data
 @NoArgsConstructor

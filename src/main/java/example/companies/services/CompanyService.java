@@ -1,9 +1,9 @@
-package exampe.companies.services;
+package example.companies.services;
 
-import exampe.companies.repositories.CompanyRepository;
+import example.companies.repositories.CompanyRepository;
+import example.companies.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import exampe.companies.model.Company;
 
 import java.util.ArrayList;
 import java.util.Collections;

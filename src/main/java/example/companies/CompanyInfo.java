@@ -1,9 +1,9 @@
-package exampe.companies.controllers;
+package example.companies;
 
-import exampe.companies.dto.CompanyDto;
-import exampe.companies.dto.FilialDto;
-import exampe.companies.model.Company;
-import exampe.companies.services.CompanyService;
+import example.companies.dto.CompanyDto;
+import example.companies.dto.FilialDto;
+import example.companies.model.Company;
+import example.companies.services.CompanyService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.support.WebApplicationContextUtils;
@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class CompanyInfo extends Window {
-
     private CompanyService companyService;
     private static final long serialVersionUID = 1L;
     private ListModelList listModelList = new ListModelList();

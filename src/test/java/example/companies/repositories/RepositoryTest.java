@@ -1,10 +1,10 @@
-package exampe.companies.repositories;
+package example.companies.repositories;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.jdbc.Sql;
-import exampe.companies.model.Company;
+import example.companies.model.Company;
 
 import java.util.List;
 
